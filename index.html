@@ -6,7 +6,7 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/style.css"/>
     <title>Eat Travel Enjoy</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
  <select class="cuisine" >
     <option value="food">Food</option>
     </select> 
-  <input type="text" id="city" placeholder="Place">
+ <input id="searchInput" type="text" placeholder="Place">
   <input type="date" id="myDate" value="date">  
 <button type="submit"><i class="fa fa-search"></i></button>
 </div> 
@@ -23,13 +23,19 @@
 <h1>Travel</h1>
 <h1>Enjoy</h1>
 </div>
+    <div id="map">
+    <img src="" width="16" height="16" id="place-icon">
+    </div>
+
+
+    <!-- JQuery & JS --> 
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIclv50_UvfTjpwisowYX9UbzDMZJ8cqc&libraries=places&callback=initMap"
+         type="text/javascript"></script>
 </body>
 </html>
 
-<script>
-document.getElementById('myDate').valueAsDate = new Date()
-/*function myFunction() {
-  var x = document.getElementById("myDate").value;
-  document.getElementById("demo").innerHTML = x;
-}*/
-</script>
+ 
+ 
